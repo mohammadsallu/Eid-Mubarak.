@@ -1,0 +1,461 @@
+<script type="text/javascript">
+	atOptions = {
+		'key' : '66fe398fa1d0652ae278dcb568f4d661',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/66fe398fa1d0652ae278dcb568f4d661/invoke.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eid Mubarak Wishes!</title>
+    <style>
+        :root {
+            /* Golden Twilight Theme */
+            --bg-gradient-start: #232a45; /* Deep Indigo */
+            --bg-gradient-end: #534371; /* Muted Purple */
+            --primary-gold: #FFD700; /* Bright Gold */
+            --secondary-orange: #FFA500; /* Warm Orange */
+            --text-light: #f0f0f0; /* Off-white text */
+            --text-dark-container: #333333; /* Dark text for container content */
+            --container-bg: rgba(255, 255, 245, 0.92); /* Light Ivory, slightly transparent */
+            --container-border: #e0cda4; /* Soft Gold Border */
+        }
+
+        @font-face { /* Optional: A nice festive font if you want to host it or use Google Fonts */
+            font-family: 'Lalezar'; /* Example */
+            /* src: url('Lalezar-Regular.ttf'); */ /* You'd need to provide the font file */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 'Lalezar', fallback */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(145deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .ad-placeholder {
+            background-color: rgba(0,0,0,0.2);
+            color: var(--text-light);
+            text-align: center;
+            padding: 8px 0;
+            font-size: 0.75em;
+            width: 100%;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+        .top-ad { height: 45px; line-height: 45px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+        .bottom-ad { height: 45px; line-height: 45px; border-top: 1px solid rgba(255,255,255,0.15); }
+
+        .main-content-area {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 15px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            color: var(--text-dark-container);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 15px var(--primary-gold) inset;
+            max-width: 390px;
+            width: 92%;
+            text-align: center;
+            border: 2px solid var(--container-border);
+            position: relative;
+            z-index: 10;
+        }
+         .container::before { /* Lantern or Star emoji */
+            content: "🏮"; /* Or "🌟" */
+            color: var(--secondary-orange);
+            position: absolute;
+            top: -18px;
+            left: 20px;
+            font-size: 2.8em;
+            opacity: 0.9;
+            text-shadow: 0 0 10px var(--secondary-orange);
+        }
+         .container::after { /* Crescent moon */
+            content: "🌙";
+            color: var(--primary-gold);
+            position: absolute;
+            bottom: -15px;
+            right: 20px;
+            font-size: 2.5em;
+            opacity: 0.9;
+            transform: rotate(15deg);
+            text-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        #eidImage {
+            max-width: 88%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 4px solid var(--primary-gold);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .greeting {
+            font-size: 2.4em; /* Slightly larger */
+            color: var(--secondary-orange);
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        .greeting.animate { animation: fadeInSlideUp 0.7s ease-out forwards; }
+
+        .sender-name {
+            font-size: 1.7em;
+            color: var(--primary-gold);
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        .sender-name.animate { animation: fadeInSlideUp 0.7s ease-out 0.3s forwards; }
+
+        @keyframes fadeInSlideUp { to { opacity: 1; transform: translateY(0); } }
+
+        input[type="text"] {
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid var(--container-border);
+            border-radius: 10px;
+            width: calc(100% - 32px);
+            font-size: 1em;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: var(--text-dark-container);
+        }
+        input[type="text"]:focus {
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+            outline: none;
+        }
+
+        button#shareWishButton {
+            background: linear-gradient(135deg, var(--secondary-orange), var(--primary-gold));
+            color: #4a3b00; /* Dark gold text for better contrast on gold button */
+            padding: 14px 22px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.15em;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            width: calc(100% - 32px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        button#shareWishButton:hover { 
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            transform: translateY(-2px);
+        }
+        button#shareWishButton:active { 
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .instructions {
+            font-size: 0.9em;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        #fireworks-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @media (max-width: 420px) {
+            .greeting { font-size: 2.1em; }
+            .sender-name { font-size: 1.5em; }
+            input[type="text"], button#shareWishButton { font-size: 1em; padding: 12px 18px;}
+            .top-ad, .bottom-ad { height: 40px; line-height: 40px; font-size: 0.7em; }
+            .container::before { font-size: 2.4em; top: -15px; left: 15px;}
+            .container::after { font-size: 2.2em; bottom: -12px; right: 15px;}
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="ad-placeholder top-ad">
+        Top Ad Space (e.g., 320x45)
+    </div>
+
+    <canvas id="fireworks-canvas"></canvas>
+
+    <div class="main-content-area">
+        <div class="container">
+            <img id="eidImage" src="Eid mubarak.gif" alt="Eid Mubarak Animation">
+
+            <h1 id="greetingText" class="greeting">Eid Mubarak!</h1>
+            <p id="senderText" class="sender-name"></p>
+
+            <p class="instructions">Apna naam neeche likho aur doston ko wish karo!</p>
+            <input type="text" id="nameInput" placeholder="Apna naam yahan likho...">
+            
+            <!-- Using a phone emoji that implies sharing options including WhatsApp -->
+            <button id="shareWishButton" onclick="prepareAndShare()">Share Karo 📲</button> 
+        </div>
+    </div>
+
+    <div class="ad-placeholder bottom-ad">
+        Bottom Ad Space (e.g., 320x45)
+    </div>
+
+    <script>
+        const greetingTextElement = document.getElementById('greetingText');
+        const senderTextElement = document.getElementById('senderText');
+        const nameInputElement = document.getElementById('nameInput');
+        const eidImageElement = document.getElementById('eidImage');
+
+        let currentUrlSenderName = ''; // Name of the person from the URL param
+        let gifVersion = 1; // To force GIF reload
+
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            currentUrlSenderName = urlParams.get('from');
+
+            greetingTextElement.classList.add('animate');
+
+            if (currentUrlSenderName) {
+                const decodedSenderName = decodeURIComponent(currentUrlSenderName.replace(/\+/g, ' '));
+                senderTextElement.innerHTML = `From: <span style="color:var(--secondary-orange);">${decodedSenderName}</span>`;
+                senderTextElement.classList.add('animate');
+            } else {
+                senderTextElement.textContent = "";
+            }
+            
+            // Force GIF reload by appending a unique query string
+            const baseGifSrc = "Eid mubarak.gif"; // Your GIF name
+            eidImageElement.src = `${baseGifSrc}?v=${gifVersion++}`;
+
+
+            initFireworks();
+            setTimeout(() => {
+                for(let i=0; i<2; i++) launchFireworkFromBottom(); // Initial burst
+            }, 500);
+            setInterval(() => {
+                 if (document.visibilityState === "visible") {
+                    launchFireworkFromBottom();
+                    if(Math.random() < 0.4) launchFireworkFromTop(); 
+                 }
+            }, 3500 + Math.random() * 1500); 
+        };
+
+        function prepareAndShare() {
+            const newSharerName = nameInputElement.value.trim();
+            if (newSharerName === "") {
+                alert("Wish share karne ke liye apna naam zaroor likho!");
+                nameInputElement.focus();
+                return;
+            }
+
+            const baseUrl = window.location.href.split('?')[0];
+            const shareLink = `${baseUrl}?from=${encodeURIComponent(newSharerName)}`;
+            
+            let shareMessage = `🏮✨ Eid Mubarak! ${newSharerName} ki taraf se aapko aur aapki family ko dher saari khushiyan! 🎁\n\nWish dekho yahan:`;
+            
+            if (currentUrlSenderName && currentUrlSenderName.toLowerCase() !== newSharerName.toLowerCase()) {
+                const decodedOriginalSender = decodeURIComponent(currentUrlSenderName.replace(/\+/g, ' '));
+                shareMessage = `🏮✨ Eid Mubarak! ${newSharerName} (via ${decodedOriginalSender}) ki taraf se aapko aur aapki family ko dher saari khushiyan! 🎁\n\nWish dekho yahan:`;
+            }
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Eid Mubarak Wishes!',
+                    text: shareMessage,
+                    url: shareLink,
+                })
+                .then(() => console.log('Successfully shared'))
+                .catch((error) => {
+                    console.error('Share karne mein error: ', error);
+                    copyToClipboard(shareLink, `Share nahi ho paya. Link copy kar lo aur manually send kar do:\n${shareLink}`);
+                });
+            } else {
+                copyToClipboard(shareLink, `Aapka browser direct share support nahi karta. Link copy ho gaya hai, aap manually share kar sakte hain!\n\n${shareLink}`);
+            }
+        }
+
+        function copyToClipboard(text, successMessage) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert(successMessage);
+            }, function(err) {
+                alert('Link copy nahi ho saka. Please manually copy karein:\n\n' + text);
+                console.error('Clipboard copy error: ', err);
+            });
+        }
+
+        // --- Fireworks System (Canvas based - Enhanced) ---
+        const canvas = document.getElementById('fireworks-canvas');
+        const ctx = canvas.getContext('2d');
+        let fireworks = [];
+        let particles = [];
+
+        function initFireworks() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+            animateFireworks();
+        }
+
+        function Firework(sx, sy, tx, ty) {
+            this.x = sx; this.y = sy;
+            this.sx = sx; this.sy = sy;
+            this.tx = tx; this.ty = ty;
+            this.distanceToTarget = Math.sqrt(Math.pow(tx - sx, 2) + Math.pow(ty - sy, 2));
+            this.distanceTraveled = 0;
+            this.coordinates = [];
+            this.coordinateCount = 5; // Smoother trail
+            while (this.coordinateCount--) this.coordinates.push([this.x, this.y]);
+            this.angle = Math.atan2(ty - sy, tx - sx);
+            this.speed = 2.5 + Math.random() * 2.5; // Slightly faster
+            this.acceleration = 1.04;
+            this.brightness = Math.random() * 30 + 70; // Brighter trails
+            this.targetRadius = 1.5; // Initial trail width
+            this.color = `hsl(${Math.random() * 60 + 0}, 100%, ${this.brightness}%)`; // Golds, Oranges, Yellows for trail
+        }
+
+        Firework.prototype.update = function (index) {
+            this.coordinates.pop();
+            this.coordinates.unshift([this.x, this.y]);
+            // INCREASED TRAIL WIDTH (2x)
+            if(this.targetRadius < 3) this.targetRadius += 0.4; // Was 8 and 0.3, now thicker faster
+
+            this.speed *= this.acceleration;
+            let vx = Math.cos(this.angle) * this.speed;
+            let vy = Math.sin(this.angle) * this.speed;
+            this.distanceTraveled = Math.sqrt(Math.pow(this.x - this.sx, 2) + Math.pow(this.y - this.sy, 2));
+
+            if (this.distanceTraveled >= this.distanceToTarget) {
+                createParticles(this.tx, this.ty);
+                fireworks.splice(index, 1);
+            } else {
+                this.x += vx;
+                this.y += vy;
+            }
+        };
+
+        Firework.prototype.draw = function () {
+            ctx.beginPath();
+            ctx.moveTo(this.coordinates[this.coordinates.length - 1][0], this.coordinates[this.coordinates.length - 1][1]);
+            ctx.lineTo(this.x, this.y);
+            ctx.strokeStyle = this.color;
+            ctx.lineWidth = this.targetRadius; // Using the dynamic radius
+            ctx.stroke();
+        };
+
+        function Particle(x, y) {
+            this.x = x; this.y = y;
+            this.coordinates = [];
+            this.coordinateCount = 5;
+            while (this.coordinateCount--) this.coordinates.push([this.x, this.y]);
+            this.angle = Math.random() * Math.PI * 2;
+            this.speed = Math.random() * 12 + 3; // INCREASED PARTICLE SPEED
+            this.friction = 0.965; 
+            this.gravity = 1.1; 
+            this.hue = Math.random() * 60 + (Math.random() < 0.5 ? 0 : 200); // Golds, Oranges OR Pinks/Purples for burst
+            this.brightness = Math.random() * 40 + 60; // Brighter particles
+            this.alpha = 1;
+            this.decay = Math.random() * 0.018 + 0.012; 
+            this.lineWidth = Math.random() * 2.5 + 1.5; // INCREASED PARTICLE WIDTH (2x ish)
+        }
+
+        Particle.prototype.update = function (index) {
+            this.coordinates.pop();
+            this.coordinates.unshift([this.x, this.y]);
+            this.speed *= this.friction;
+            this.x += Math.cos(this.angle) * this.speed;
+            this.y += Math.sin(this.angle) * this.speed + this.gravity;
+            this.alpha -= this.decay;
+            if (this.alpha <= this.decay) particles.splice(index, 1);
+        };
+
+        Particle.prototype.draw = function () {
+            ctx.beginPath();
+            ctx.moveTo(this.coordinates[this.coordinates.length - 1][0], this.coordinates[this.coordinates.length - 1][1]);
+            ctx.lineTo(this.x, this.y);
+            ctx.lineWidth = this.lineWidth;
+            ctx.strokeStyle = `hsla(${this.hue}, 100%, ${this.brightness}%, ${this.alpha})`;
+            ctx.stroke();
+        };
+
+        function createParticles(x, y) {
+            let particleCount = 70 + Math.floor(Math.random() * 50); // INCREASED PARTICLE COUNT (near 2x)
+            while (particleCount--) particles.push(new Particle(x, y));
+        }
+
+        function launchFireworkFromBottom() {
+            let startX = canvas.width / 2 + (Math.random() * canvas.width / 2.5 - canvas.width / 5);
+            let startY = canvas.height;
+            let targetX = startX + (Math.random() * 300 - 150); 
+            let targetY = Math.random() * canvas.height / 2.2 + canvas.height / 8; 
+            fireworks.push(new Firework(startX, startY, targetX, targetY));
+        }
+        function launchFireworkFromTop() { 
+            let startX = canvas.width / 2 + (Math.random() * canvas.width / 2.5 - canvas.width / 5);
+            let startY = 0;
+            let targetX = startX + (Math.random() * 300 - 150); 
+            let targetY = Math.random() * canvas.height / 2.2 + canvas.height * 0.35; 
+            fireworks.push(new Firework(startX, startY, targetX, targetY));
+        }
+
+        function animateFireworks() {
+            requestAnimationFrame(animateFireworks);
+            ctx.globalCompositeOperation = 'destination-out';
+            ctx.fillStyle = 'rgba(10, 20, 40, 0.25)'; // Darker, slower fade for deep space effect
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.globalCompositeOperation = 'lighter';
+
+            for (let i = fireworks.length - 1; i >= 0; i--) {
+                fireworks[i].draw();
+                fireworks[i].update(i);
+            }
+            for (let i = particles.length - 1; i >= 0; i--) {
+                particles[i].draw();
+                particles[i].update(i);
+            }
+        }
+    </script>
+</body>
+</html><script type="text/javascript">
+	atOptions = {
+		'key' : '66fe398fa1d0652ae278dcb568f4d661',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/66fe398fa1d0652ae278dcb568f4d661/invoke.js"></script>
